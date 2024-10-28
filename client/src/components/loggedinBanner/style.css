@@ -1,0 +1,26 @@
+.nav-undernav-holds-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* #FF1654 - radical red ||| #CE7DA5 - Pinkish purple || #342E37 - lighter black (white text) */
+  background-color: #342e37;
+  width: 100%;
+}
+
+.nav-undernav-banner {
+  text-align: center;
+  width: 45%;
+}
+
+.undernav-text {
+  font-family: "Bebas Neue", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  color: white;
+}
+
+.clickhereLink,
+.clickhereLink:hover{
+  color: white;
+}

@@ -1,0 +1,65 @@
+.hold-everything-navbar {
+  margin: 1rem;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.climbinglogo {
+  width: 8rem;
+}
+
+.holds-page-options {
+  display: flex;
+}
+
+.navbar-button {
+  color: #342e37;
+  background-color: transparent;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.3em;
+  border: none;
+  text-decoration: none;
+  transition: ease-in-out 0.4s;
+}
+
+/* .navbar-button:hover {
+  color: red;
+} */
+
+.nav-undernav-holds-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* #FF1654 - radical red ||| #CE7DA5 - Pinkish purple || #342E37 - lighter black (white text) */
+  background-color: #342e37;
+  width: 100%;
+}
+
+.nav-undernav-banner {
+  text-align: center;
+  width: 55%;
+}
+
+.undernav-text {
+  font-family: "Bebas Neue", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  margin: 0.5rem;
+  color: white;
+}
+
+@media (max-width: 460px) {
+  .header-section{
+    flex-direction: column;
+  }
+  .header-section{
+    justify-content: space-around;
+  }
+}

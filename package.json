@@ -1,0 +1,43 @@
+{
+  "name": "the-climbing-wall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/server.js",
+    "client": "npm start --prefix client",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build",
+    "reactbuild": "react-scripts build"
+  },
+  "configurations": [
+    {
+      "env": {
+        "NODE_ENV": "production",
+        "port": "3001"
+      }
+    }
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.3.0",
+    "axios": "^1.7.7",
+    "bcrypt": "^5.1.1",
+    "concurrently": "^9.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0",
+    "mongoose": "^8.7.3",
+    "nodemon": "^3.1.7",
+    "react-datepicker": "^7.5.0",
+    "react-scripts": "^5.0.1"
+  }
+}

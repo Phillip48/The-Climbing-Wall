@@ -1,0 +1,137 @@
+.hold-everything-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #342e37;
+}
+
+.holds-contact-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 10rem;
+}
+
+.holds-logo-footer {
+  margin-left: 5rem;
+}
+
+.footer-contact {
+  margin: 1rem 5rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-subtext {
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1em;
+  margin: 0.5rem;
+  color: white;
+}
+
+.footer-smallsubtext {
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  margin: 0.5rem;
+  color: white;
+}
+.footer-smallersubtext {
+  margin-top: -0.7rem;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.5em;
+  color: white;
+}
+@media (max-width: 600px) {
+  .holds-logo-footer {
+    margin: 0 0 0 1rem;
+  }
+  .footer-contact {
+    margin: 0 1rem 0 0;
+  }
+  .footer-subtext{
+    font-size: .9em;
+  }
+  .footer-smallsubtext{
+    font-size: .7em;
+  }
+  .footer-logo{
+    width: 8rem;
+  }
+}
+
+@media (max-width: 325px) {
+  /* .holds-logo-footer {
+    margin: 0 0 0 1rem;
+  }
+  .footer-contact {
+    margin: 0 1rem 0 0;
+  } */
+  .footer-subtext{
+    font-size: .9em;
+  }
+  .footer-smallsubtext{
+    font-size: .6em;
+  }
+}
+@media (max-width: 305px) {
+  /* .holds-logo-footer {
+    margin: 0 0 0 1rem;
+  }
+  .footer-contact {
+    margin: 0 1rem 0 0;
+  } */
+  .footer-subtext{
+    font-size: .9em;
+  }
+  .footer-smallsubtext{
+    font-size: .5em;
+  }
+}
+
+@media (max-width: 300px) {
+  .logo-text {
+    font-size: 3em;
+  }
+  .footer-logo{
+    width: 6rem;
+  }
+}
+
+
+@media (max-width: 300px) {
+  .holds-contact-info{
+    flex-direction: column;
+  }
+  .holds-logo-footer {
+    margin: 0;
+  }
+  .footer-contact {
+    margin: 0;
+  }
+}
+
+/* 
+@media (max-width: 269px) {
+  .footer-subtext{
+    font-size: .7em;
+  }
+  .footer-smallsubtext{
+    font-size: .3em;
+  }
+  .footer-logo{
+    width: 5rem;
+  }
+  .footer-smallersubtext{
+    margin-top: -0.4rem;
+    font-size: 0.3em;
+  }
+} */
