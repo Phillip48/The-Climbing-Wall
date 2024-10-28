@@ -10,6 +10,8 @@
   </a>
 </p>
 
+<p>Disclaimer: This was copied over from an older repo of mine.</p>
+
 ## Table of contents
 
 - [Climbing-gym-progress-tracker](#climbing-gym-progress-tracker)
