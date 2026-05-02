@@ -62,26 +62,6 @@ A mobile app for climbers to track projects, log sends, plan training sessions, 
 
 ---
 
-## Running Locally
-
-**Prerequisites:** Node.js 18+, Expo CLI, iOS Simulator or Android Emulator (or the Expo Go app on a physical device).
-
-```bash
-# Install dependencies
-npm install
-
-# Start the dev server
-npm start
-
-# Run on a specific platform
-npm run ios
-npm run android
-```
-
-To run on a physical device, scan the QR code in the terminal with the [Expo Go](https://expo.dev/go) app.
-
----
-
 ## Author
 
 **Phillip Pereira**
