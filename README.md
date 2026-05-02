@@ -1,76 +1,89 @@
-# The Climbing Wall App
+# The Climbing Wall
 
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-v1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/Rini0404/LeCookBook" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
-  </a>
-  <a href="https://github.com/kefranabg/readme-md-generator/graphs/commit-activity" target="_blank">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
-  </a>
+  <img alt="Version" src="https://img.shields.io/badge/version-2.0.0-blue.svg" />
+  <img alt="Platform" src="https://img.shields.io/badge/platform-iOS%20%7C%20Android-lightgrey.svg" />
+  <img alt="Built with Expo" src="https://img.shields.io/badge/built%20with-Expo-000020.svg?logo=expo" />
+  <img alt="Maintained" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
 </p>
 
-[View the website →](https://theclimbingwall.phillippereira.com)
+A mobile app for climbers to track projects, log sends, plan training sessions, and analyze progression — all stored locally on your device with no account or cloud required.
 
-## Table of contents
+[**Try the live demo →**](https://theclimbingwall.phillippereira.com)
 
-- [Table of contents](#table-of-contents)
-- [The Project](#the-project)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Questions](#questions)
-- [Collaborators](#collaborators)
+---
 
-## The Project
+## Features
 
-Create a mobile app with the following features:
+### Projects & Sends
+- Log climbing projects with grade, wall type, hold type, attempt count, session count, and notes
+- Attach video recordings and auto-generated thumbnails to any climb
+- Mark a project as sent to automatically convert it to a send and update your max grade
+- Track warmup climbs separately so they don't skew your stats
 
-- [x] Create, edit, and delete a project. The project has the following fields:
-  * Title
-  * Grade
-  * Type of Climb
-  * Type of Wall
-  * Attempts
-  * Sessions
-  * Notes
-  * Video 
-  * Thumbnail
-  * If the project was sent
-- [x] Once a project is sent it will be deleted and created as a send. 
-- [x] Create, edit, and delete a send. The send has the following fields:
-  * Title
-  * Grade
-  * Type of Climb
-  * Type of Wall
-  * Attempts
-  * Notes
-  * Video 
-  * Thumbnail
-  * Was the climb a warmup
-- [x] Once a send is deleted or updated it will check your sends to update your max grades. 
-- [x] Have a page that shows the users projects and sends.
-- [x] Have a page that shows the users stats like climbing totals, max grades, graphs and heat maps. 
-- [x] Have a diary for climbing that allows you to take notes of your day and shows the sends below that based on the day the user is on. 
-- [x] Connected with op-sqlite to store and relay all data. This way a cloud DB is not needed and everything stays local.
-- [x] Meet good-quality coding standards (indentation, scoping, naming, etc.)
+### Training Log
+- Record training sessions by type: Max Strength, Power Endurance, Endurance, Technique, or Off-Wall Conditioning
+- Choose from a curated drill list per session type (4x4s, ARC Training, Limit Bouldering, Quiet Feet, and more)
+- Add notes per session to track what worked
 
-## Installation
+### Stats & Progression
+- Personal bests for bouldering (V-scale) and top rope (5.x) updated automatically
+- Send totals, attempt counts, and project completion rate
+- Grade trend graph across the last 3 months
+- Heatmap showing days climbed
 
-<p><a href="https://appetize.io/app/b_e77nh6nlgxdsw3thwigj7fxutq">Wanna check it out?</a></p>
-Here are the creds to play around without creating an account:<br>
-testing2@gmail.com<br>
-Testing12345
+### Climbing Diary
+- Daily diary entries linked to the sends logged that day
+- Browse back through any date to review what you climbed
 
-## Usage
+### AI Coaching *(optional)*
+- **Session Coach** — recommends a session focus and drill based on your recent logs
+- **Progression Insights** — analyzes your grade trend, wall type bias, and completion rate to give honest feedback
+- Powered by your own API key (Anthropic Claude, OpenAI, or Groq) — no key is stored by the app beyond your device
+- Beginners automatically receive volume-first advice rather than advanced drill recommendations
 
-**User Story**
+### Privacy First
+- All data lives in a local SQLite database on your device
+- No account required, no cloud sync, no data leaves your phone (except optional AI calls using your own key)
+- Export and restore your database manually at any time
 
-As the user I want to track my climbing progress with a mobile app. This should allow me to create, read, upload and delete projects and sends. I also want to see my stats like total send and attempts, as well as max bouldering and top roping grades. Other stats include a graph of all sends and a heatmap to show days climbed.
+---
 
-## Questions  
+## Tech Stack
 
-If you have questions or you want to share comments, we will be glad to hear from you.
+| Layer | Technology |
+|---|---|
+| Framework | React Native via [Expo](https://expo.dev) (SDK 51) |
+| Navigation | [expo-router](https://expo.github.io/router) (file-based) |
+| Database | SQLite via [expo-sqlite](https://docs.expo.dev/versions/latest/sdk/sqlite/) |
+| Styling | [NativeWind](https://www.nativewind.dev) (Tailwind CSS for RN) |
+| Media | expo-image-picker, expo-video, expo-video-thumbnails |
+| AI (optional) | Anthropic Claude, OpenAI, Groq |
 
-## Collaborators  
+---
 
-- Phillip Pereira - https://github.com/Phillip48
+## Running Locally
+
+**Prerequisites:** Node.js 18+, Expo CLI, iOS Simulator or Android Emulator (or the Expo Go app on a physical device).
+
+```bash
+# Install dependencies
+npm install
+
+# Start the dev server
+npm start
+
+# Run on a specific platform
+npm run ios
+npm run android
+```
+
+To run on a physical device, scan the QR code in the terminal with the [Expo Go](https://expo.dev/go) app.
+
+---
+
+## Author
+
+**Phillip Pereira**
+- GitHub: [@Phillip48](https://github.com/Phillip48)
+- Website: [theclimbingwall.phillippereira.com](https://theclimbingwall.phillippereira.com)
