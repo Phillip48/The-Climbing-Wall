@@ -14,13 +14,12 @@
 
 ## Table of contents
 
-- [The Climbing Wall Mobile App](#The Climbing Wall App)
-  - [Table of contents](#table-of-contents)
-  - [The Project](#the-project)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Questions](#questions)
-  - [Collaborators](#collaborators)
+- [Table of contents](#table-of-contents)
+- [The Project](#the-project)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Questions](#questions)
+- [Collaborators](#collaborators)
 
 ## The Project
 
