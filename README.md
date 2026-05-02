@@ -14,7 +14,7 @@
 
 ## Table of contents
 
-- [The-Climbing-Wall-Mobile App](#the-climbing-wall-mobile-app)
+- [The Climbing Wall Mobile App](#The Climbing Wall App)
   - [Table of contents](#table-of-contents)
   - [The Project](#the-project)
   - [Installation](#installation)
